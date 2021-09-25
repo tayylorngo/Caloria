@@ -1,6 +1,6 @@
 # Caloria - A SBUHacks 2021 Project
 
-![logo](https://imgur.com/HLfN5nQ)
+![logo](https://i.imgur.com/HLfN5nQ.png)
 
 ## What is Caloria?
 
@@ -21,10 +21,23 @@ Our app can benefit both beginners looking to begin their fitness journeys and t
 
 When you first open the app, you are prompted to enter information about yourself, such as age and weight. 
 This is done to calculate the amount of calories you will use in a day.
+![create_profile](https://i.imgur.com/UlXyEMf.png)
+
 Now you can navigate to the Calculator, which should be filled with the information you provided.
+![calculator](https://i.imgur.com/ST5TIeb.png)
+
+
 Then you can press the calculate button, which results in a screen that details the amount of calories you will have to gain per day to maintain, lose, or gain weight.
+![calculator_results](https://i.imgur.com/RsCC4PF.png)
+
 After you can press the Exercise button, which will allow you to create an exercise routine.
-First, input the number of calories you wish to burn. Then, choose which exercises you would like to be a part of your schedule. 
+First, input the number of calories you wish to burn. Then, choose which exercises you would like to be a part of your schedule.
+![exercise_generator](https://i.imgur.com/qRm7INn.png)
+
+
 After choosing, click the create exercise button to create an exercise routine that will burn as many calories as you inputted.
+![exercise_generator_results](https://i.imgur.com/RsCC4PF.png)
+
 If you would ever like to change the information you initially provided about yourself, you may go to the Settings screen.
 Here you can change fields such as your weight. Make sure to click update when you are finished.
+![settings](https://i.imgur.com/mtHx4ms.png)
