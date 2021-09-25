@@ -64,26 +64,50 @@
         android:layout_height="50dp"
         android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/textSex"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="Sex:" />
+            android:orientation="vertical">
 
-        <CheckBox
-            android:id="@+id/checkBoxMale"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Male" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
 
-        <CheckBox
-            android:id="@+id/checkBoxFemale"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            <TextView
+                android:id="@+id/textGender"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_weight="1"
+                android:text="Gender:" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <RadioGroup
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="Female" />
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/toggleMale"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:checked="false"
+                android:text="Male" />
+
+            <RadioButton
+                android:id="@+id/toggleFemale"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="Female" />
+
+        </RadioGroup>
 
         <Space
             android:layout_width="wrap_content"
@@ -102,25 +126,25 @@
             android:layout_width="10dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Height:" />
+            android:text="Height(ft,in):" />
 
         <EditText
-            android:id="@+id/editHeight"
-            android:layout_width="30dp"
+            android:id="@+id/editHeight1"
+            android:layout_width="0dp"
             android:layout_height="50dp"
             android:layout_weight="1"
             android:ems="10"
-            android:hint="height"
+            android:hint="ft"
             android:inputType="number" />
 
-        <ToggleButton
-            android:id="@+id/toggleHeight"
-            android:layout_width="25dp"
+        <EditText
+            android:id="@+id/editHeight2"
+            android:layout_width="0dp"
             android:layout_height="50dp"
             android:layout_weight="1"
-            android:text="ToggleButton"
-            android:textOff="cm"
-            android:textOn="in" />
+            android:ems="10"
+            android:hint="in"
+            android:inputType="number" />
 
         <Space
             android:layout_width="wrap_content"
@@ -130,7 +154,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="50dp"
         android:layout_weight="1"
         android:orientation="horizontal">
 
@@ -139,7 +163,7 @@
             android:layout_width="10dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Weight:" />
+            android:text="Weight(lb):" />
 
         <EditText
             android:id="@+id/editWeight"
@@ -147,17 +171,32 @@
             android:layout_height="50dp"
             android:layout_weight="1"
             android:ems="10"
-            android:hint="weight"
+            android:hint="lb"
             android:inputType="number" />
 
-        <ToggleButton
-            android:id="@+id/toggleWeight"
-            android:layout_width="25dp"
-            android:layout_height="50dp"
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/buttonUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="ToggleButton"
-            android:textOff="kg"
-            android:textOn="lb" />
+            android:text="Update" />
 
         <Space
             android:layout_width="wrap_content"
