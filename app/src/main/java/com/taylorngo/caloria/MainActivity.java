@@ -4,6 +4,8 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.TextView;
@@ -14,10 +16,18 @@ import org.jetbrains.annotations.NotNull;
 
 public class MainActivity extends AppCompatActivity {
 
+    public static final String SHARED_PREFS = "sharedPreferences";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        SharedPreferences sharedPreferences = getSharedPreferences(SHARED_PREFS, MODE_PRIVATE);
+        if(sharedPreferences.getString("NAME", null) == null){
+            System.out.println(sharedPreferences.getString("NAME", "JOHN"));
+            openStartActivity();
+        }
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
         bottomNavigationView.setOnNavigationItemSelectedListener(navListener);
@@ -44,4 +54,9 @@ public class MainActivity extends AppCompatActivity {
                     return true;
                 }
             };
+
+    public void openStartActivity(){
+        Intent intent = new Intent(this, CreateProfile.class);
+        startActivity(intent);
+    }
 }
