@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Caloria">
-        <activity android:name=".CalculatorResults"></activity>
+        <activity android:name=".ExercisesGenerated"></activity>
+        <activity android:name=".CalculatorResults" />
         <activity android:name=".CreateProfile" />
         <activity android:name=".MainActivity">
             <intent-filter>
