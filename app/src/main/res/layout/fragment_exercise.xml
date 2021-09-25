@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/white">
+    android:background="@android:color/white"
+    android:padding="15sp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -80,6 +82,121 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1" />
         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Exercise" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Calories/min" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Enabled" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textRunning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Running" />
+
+            <TextView
+                android:id="@+id/textCal1"
+                android:layout_width="81dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="10" />
+
+            <CheckBox
+                android:id="@+id/checkBox1"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:clickable="false" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textSwimming"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Running" />
+
+            <TextView
+                android:id="@+id/textCal2"
+                android:layout_width="81dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="15" />
+
+            <CheckBox
+                android:id="@+id/checkBox2"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:clickable="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textWalking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Walking" />
+
+            <TextView
+                android:id="@+id/textCal3"
+                android:layout_width="81dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="5" />
+
+            <CheckBox
+                android:id="@+id/checkBox3"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:clickable="false" />
+
+        </LinearLayout>
+
     </LinearLayout>
 </ScrollView>
 
