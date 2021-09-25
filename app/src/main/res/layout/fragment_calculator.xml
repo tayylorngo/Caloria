@@ -3,32 +3,141 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/holo_blue_dark"
+    android:padding="15sp"
     >
 
     <Space
         android:layout_width="match_parent"
         android:layout_height="32dp" />
 
-    <LinearLayout
+    <TextView
+        android:id="@+id/calorieCalculatorTitle"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Calorie Calculator" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="12dp" />
+
+    <TextView
+        android:id="@+id/calculatorDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:text="This calorie calculator estimates the amount of calories a person needs to consume daily. It also provides guidelines to help gain/lose weight." />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <TextView
+        android:id="@+id/genderInputLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gender:"
+        android:textSize="15dp" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="left"
         android:orientation="horizontal">
 
-        <Space
+        <RadioButton android:id="@+id/maleRadioButtonCalc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1" />
+            android:text="Male" />
 
-        <TextView
+        <RadioButton
+            android:id="@+id/femaleRadioButtonCalc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="CALCULATOR" />
+            android:text="Female" />
+    </RadioGroup>
 
-        <Space
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1" />
-    </LinearLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <TextView
+        android:id="@+id/enterWeightText"
+        android:textSize="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter Weight (lb):" />
+
+    <EditText
+        android:id="@+id/weightInputCalc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="15dp"
+        android:inputType="numberDecimal"
+        android:hint="weight" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <TextView
+        android:id="@+id/enterHeightText"
+        android:textSize="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter Height:" />
+
+    <EditText
+        android:id="@+id/heightInput1Calc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="15dp"
+        android:inputType="number"
+        android:hint="feet" />
+
+    <EditText
+        android:id="@+id/heightInput2Calc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="15dp"
+        android:inputType="number"
+        android:hint="inches" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <TextView
+        android:id="@+id/enterAgeInputLabel"
+        android:textSize="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter Age:" />
+
+    <EditText
+        android:id="@+id/ageInputCalc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="15dp"
+        android:inputType="number"
+        android:hint="age"
+        />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+
+    <Button
+        android:id="@+id/calculateCalories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate" />
 
 </LinearLayout>
