@@ -1,4 +1,7 @@
 # Caloria - A SBUHacks 2021 Project
+
+![logo](https://imgur.com/HLfN5nQ)
+
 ## What is Caloria?
 
 Caloria is an android app created by a group of students for SBUHacks 2021. 
