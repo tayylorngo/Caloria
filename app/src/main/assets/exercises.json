@@ -1,0 +1,16 @@
+{
+  "exercises": [
+    {
+      "name": "Running",
+      "calpmin": 100
+    },
+    {
+      "name": "Swimming",
+      "calpmin": 150
+    },
+    {
+      "name": "Walking",
+      "calpmin": 50
+    }
+  ]
+}
